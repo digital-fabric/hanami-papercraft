@@ -21,9 +21,19 @@ Please keep in mind that `hanami-papercraft` is still in a very early stage of
 development, so things might not work as you expect, especially if you use the
 more advanced features of Hanami.
 
-### 1. Set your app's basic view class 
+## 1. Add hanami-papercraft
 
-In the `app/view.rb` file, change the `View` classes superclass to `Hanami::PapercraftView`:
+In your `Gemfile`, add the following line:
+
+```ruby
+gem "hanami-papercraft"
+```
+
+Then run `bundle install` to update your dependencies.
+
+### 2. Set your app's basic view class 
+
+In `app/view.rb`, change the `View` classes superclass to `Hanami::PapercraftView`:
 
 ```ruby
 # app/view.rb
@@ -34,7 +44,7 @@ module Bookshelf
 end
 ```
 
-### 2. Use a Papercraft layout template
+### 3. Use a Papercraft layout template
 
 Replace the app's layout template stored in `app/templates/layouts/app.html.erb`
 with a file named `app/templates/layouts/app.papercraft.rb`:

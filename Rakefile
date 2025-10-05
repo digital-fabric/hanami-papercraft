@@ -6,7 +6,7 @@ task :test do
 end
 
 task :release do
-  require_relative './lib/papercraft_view_version'
+  require_relative './lib/hanami/papercraft_view_version'
   version = Hanami::PAPERCRAFT_VIEW_VERSION
 
   puts 'Building hanami-papercraft...'
