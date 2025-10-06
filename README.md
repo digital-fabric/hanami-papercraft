@@ -21,7 +21,7 @@ Please keep in mind that `hanami-papercraft` is still in a very early stage of
 development, so things might not work as you expect, especially if you use the
 more advanced features of Hanami.
 
-## 1. Add hanami-papercraft
+### 1. Add hanami-papercraft
 
 In your `Gemfile`, add the following line:
 
@@ -69,7 +69,7 @@ with a file named `app/templates/layouts/app.papercraft.rb`:
 }
 ```
 
-### 3. Use Papercraft view templates
+### 4. Use Papercraft view templates
 
 You can now start writing your view templates with Papercraft, e.g.:
 
